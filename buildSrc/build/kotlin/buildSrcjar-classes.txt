@@ -1,0 +1,1 @@
+/Users/macmini/Documents/androidProjects/SabaIdeaTest/buildSrc/build/classes/kotlin/main/AppDetail.class:/Users/macmini/Documents/androidProjects/SabaIdeaTest/buildSrc/build/classes/kotlin/main/Dependencies.class:/Users/macmini/Documents/androidProjects/SabaIdeaTest/buildSrc/build/classes/kotlin/main/Versions.class
