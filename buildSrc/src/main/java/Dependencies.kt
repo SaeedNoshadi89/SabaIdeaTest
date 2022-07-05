@@ -46,7 +46,6 @@ object Dependencies {
 	const val ktor_negotiation = "io.ktor:ktor-client-content-negotiation:$ktor_version"
 	const val ktor_okhttp = "io.ktor:ktor-client-okhttp:$ktor_version"
 	const val ktor_logging = "io.ktor:ktor-client-logging:$ktor_version"
-
 	const val android_coroutines =
 		"org.jetbrains.kotlinx:kotlinx-coroutines-android:$android_coroutines_version"
 	const val compose_viewmodel =
@@ -60,10 +59,10 @@ object Dependencies {
 object Versions {
 	const val kotlin_version = "1.6.21"
 	const val android_coroutines_version = "1.3.9"
-	const val compose_version = "1.2.0-rc03"
+	const val compose_version = "1.2.0-rc02"
 	const val compose_coil_version = "2.1.0"
 	const val core_version = "1.7.0"
-	const val compose_material_version = "1.0.0-alpha13"
+	const val compose_material_version = "1.0.0-alpha14"
 	const val lifecycle_version = "2.5.0-rc01"
 	const val compose_activity_version = "1.3.1"
 	const val junit_version = "4.13.2"
@@ -71,7 +70,7 @@ object Versions {
 	const val espresso_version = "3.4.0"
 	const val hilt_plugin_version = "2.42"
 	const val hilt_navigation_compose_version = "1.0.0"
-	const val ktor_version = "2.0.2"
+	const val ktor_version = "2.0.3"
 	const val kotlin_serialization_json_version = "1.3.3"
 	const val timber_version = "5.0.1"
 }
