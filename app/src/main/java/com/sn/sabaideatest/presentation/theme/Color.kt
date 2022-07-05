@@ -1,4 +1,4 @@
-package com.sn.sabaideatest.ui.theme
+package com.sn.sabaideatest.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
