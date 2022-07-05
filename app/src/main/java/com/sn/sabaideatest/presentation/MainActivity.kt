@@ -1,4 +1,4 @@
-package com.sn.sabaideatest
+package com.sn.sabaideatest.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.sn.sabaideatest.ui.theme.SabaIdeaTestTheme
+import com.sn.sabaideatest.presentation.theme.SabaIdeaTestTheme
 
 class MainActivity : ComponentActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
