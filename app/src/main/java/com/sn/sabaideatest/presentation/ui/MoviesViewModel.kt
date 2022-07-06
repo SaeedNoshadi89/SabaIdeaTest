@@ -56,8 +56,6 @@ class MoviesViewModel @Inject constructor(private val useCase: SearchMovieUseCas
 							idle = false)
 					}
 					is Result.Success -> viewModelState.update {
-						Timber.e("${query} //")
-						Timber.e(result.data.toString())
 						it.copy(isLoading = false,
 							moviesList = result.data,
 							idle = result.data.isEmpty())
