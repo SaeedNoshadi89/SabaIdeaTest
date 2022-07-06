@@ -4,6 +4,7 @@ import Versions.compose_coil_version
 import Versions.compose_material_version
 import Versions.compose_version
 import Versions.core_version
+import Versions.coroutines_test_version
 import Versions.espresso_version
 import Versions.hilt_navigation_compose_version
 import Versions.hilt_plugin_version
@@ -14,6 +15,8 @@ import Versions.ktor_version
 import Versions.lifecycle_version
 import Versions.text_junit_version
 import Versions.timber_version
+import Versions.truth_version
+import Versions.turbine_version
 
 object Dependencies {
 	const val core = "androidx.core:core-ktx:$core_version"
@@ -54,6 +57,11 @@ object Dependencies {
 		"androidx.compose.material:material-icons-extended:$compose_version"
 	const val compose_coil = "io.coil-kt:coil-compose:$compose_coil_version"
 	const val timber = "com.jakewharton.timber:timber:$timber_version"
+	const val truth = "com.google.truth:truth:$truth_version"
+	const val turbine = "app.cash.turbine:turbine:$turbine_version"
+	const val coroutine_test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version"
+
+
 }
 
 object Versions {
@@ -73,6 +81,9 @@ object Versions {
 	const val ktor_version = "2.0.3"
 	const val kotlin_serialization_json_version = "1.3.3"
 	const val timber_version = "5.0.1"
+	const val truth_version = "1.1.3"
+	const val turbine_version = "0.8.0"
+	const val coroutines_test_version = "1.6.3"
 }
 
 object AppDetail {

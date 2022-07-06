@@ -42,12 +42,11 @@ class MoviesViewModel @Inject constructor(private val useCase: SearchMovieUseCas
 		initialValue = viewModelState.value.toUiState())
 
 	fun getMovies(query: String) {
+		searchJob?.cancel()
+		viewModelState.update { it.copy(isLoading = query.isNotEmpty(), idle = query.isEmpty(), searchInput = query) }
 		if (query.isEmpty()) {
-			viewModelState.update { it.copy(isLoading = false, idle = true) }
 			return
 		}
-		viewModelState.update { it.copy(isLoading = true, idle = false, searchInput = query) }
-		searchJob?.cancel()
 		searchJob = viewModelScope.launch {
 			delay(500L)
 			useCase.invoke(viewModelState.value.searchInput).asResult().collect { result ->
@@ -57,9 +56,11 @@ class MoviesViewModel @Inject constructor(private val useCase: SearchMovieUseCas
 							idle = false)
 					}
 					is Result.Success -> viewModelState.update {
+						Timber.e("${query} //")
+						Timber.e(result.data.toString())
 						it.copy(isLoading = false,
 							moviesList = result.data,
-							idle = false)
+							idle = result.data.isEmpty())
 					}
 					is Result.Error -> viewModelState.update {
 						it.copy(isLoading = false,
