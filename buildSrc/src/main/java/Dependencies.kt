@@ -60,8 +60,6 @@ object Dependencies {
 	const val truth = "com.google.truth:truth:$truth_version"
 	const val turbine = "app.cash.turbine:turbine:$turbine_version"
 	const val coroutine_test = "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version"
-
-
 }
 
 object Versions {
